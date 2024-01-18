@@ -29,6 +29,7 @@ const testimonials = () => {
           width={50}
           height={50}
           src={img1}
+          alt="image"
            />
             </span>
             <div className="flex-1">
@@ -56,6 +57,7 @@ const testimonials = () => {
           width={50}
           height={50}
           src={img2}
+          alt="image"
            />
             </span>
             <div className="flex-1">
@@ -83,6 +85,7 @@ const testimonials = () => {
           width={50}
           height={50}
           src={img3}
+          alt="image"
            />
             </span>
             <div className="flex-1">
