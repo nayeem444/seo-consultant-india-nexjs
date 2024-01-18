@@ -3,11 +3,11 @@ import emailjs from 'emailjs-com';
 import { css } from '@emotion/react';
 import { CircleLoader } from 'react-spinners';
 
-const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
-`;
+// const override = css`
+//   display: block;
+//   margin: 0 auto;
+//   border-color: red;
+// `;
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -152,7 +152,7 @@ const Form = () => {
               {loading ?  <CircleLoader
               color={'#ffffff'}
               loading={loading}
-              css={override}
+              // css={override}
               size={20}
              
               
