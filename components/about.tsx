@@ -16,6 +16,7 @@ const About = () => {
                     width={800}
                     height={800}
                     src={img2}
+                    alt="image"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
@@ -23,6 +24,7 @@ const About = () => {
                     width={800}
                     height={800}
                     src={img2}
+                    alt="image"
                     />
                   </div>
                 </div>
@@ -32,6 +34,7 @@ const About = () => {
                     width={800}
                     height={800}
                     src={img2}
+                    alt="image"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
