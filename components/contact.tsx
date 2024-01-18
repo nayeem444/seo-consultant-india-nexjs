@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
    
-<div>
+<div id="contact">
   <h1 className=" bg-white text-black text-center text-[32px] font-bold pb-16" >Book A Free 30 Min SEO Consultation Call!​</h1>
   <div className="bg-white columns-2">
 <Calendly/>

@@ -5,7 +5,7 @@ import img2 from '../public/favicon/heroImg.png'
 const About = () => {
   return (
     <>
-      <section className="overflow-hidden pt-20 pb-4 lg:pt-[120px] lg:pb-[10px] bg-white dark:bg-dark">
+      <section id="about" className="overflow-hidden pt-20 pb-4 lg:pt-[120px] lg:pb-[10px] bg-white dark:bg-dark">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
