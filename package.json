@@ -15,7 +15,18 @@
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@types/nodemailer": "^6.4.14",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.2",
+    "dotenv": "^16.3.1",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
+    "loading": "^1.13.3",
+    "react-calendly": "^4.3.0",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "autoprefixer": "10.4.7",
