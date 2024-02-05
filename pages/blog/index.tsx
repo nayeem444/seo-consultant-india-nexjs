@@ -7,6 +7,7 @@ import Intro from '../../components/intro'
 import Layout from '../../components/layout'
 import { getAllPostsForHome } from '../../lib/api'
 import Header from '../../components/Navbar'
+import Hero from '../../components/BLogHeroSection'
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node
@@ -15,8 +16,9 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Header/>
+      <Hero/>
       <Container>
-        <Intro />
+        {/* <Intro /> */}
         {heroPost && (
           <HeroPost
             title={heroPost.title}

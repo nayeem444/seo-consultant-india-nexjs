@@ -7,8 +7,10 @@ const Hero = () => {
 <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-24 ">
 <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
     <div>
-      <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight ">Unlock Your Online Potential with  <span className="text-blue-600">Expert SEO Consulting</span></h1>
-      <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">Hand-picked professionals and expertly crafted components, designed for any kind of entrepreneur.</p>
+      <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight ">Hi,
+I Am Shahid <span className="text-blue-600"> Expert SEO Consultant From India</span></h1>
+      <p className="mt-3 text-lg text-gray-800 dark:text-gray-800">The fact that you have landed here is a testament to
+the effectiveness of my optimization strategies.</p>
 
  
       <div className="mt-7 grid gap-3 w-full sm:inline-flex">

@@ -11,10 +11,11 @@ import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import PostTitle from '../../components/post-title'
 import Tags from '../../components/tags'
+import Navbar from '../../components/Navbar'
+import CommentForm from '../../components/commentForm'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
-import { CMS_NAME } from '../../lib/constants'
 
-export default function Post({ post, posts, preview }) {
+export default function Post({  post, posts, preview, }) {
   const router = useRouter()
   const morePosts = posts?.edges
 
@@ -22,19 +23,19 @@ export default function Post({ post, posts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
+
+
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        <Navbar/>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
             <article>
               <Head>
-                <title>
-                  {`${post.title} | Next.js Blog Example with ${CMS_NAME}`}
-                </title>
+              
                 <meta
                   property="og:image"
                   content={post.featuredImage?.node.sourceUrl}
@@ -52,6 +53,9 @@ export default function Post({ post, posts, preview }) {
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>
             </article>
+            <div className='container mx-auto lg-max-4xl'>
+                <CommentForm postId={post.databaseId}/>
+            </div>
 
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}

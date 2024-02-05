@@ -63,13 +63,13 @@ const Form = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-12">
-      <div className="mx-auto w-full max-w-[550px]">
-        <form  method="POST">
-            <div className="mb-5">
+    <div className='-mt-16' >
+      <div>
+        <form  method="POST"  >
+            <div >
             <label
               htmlFor="name"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              className="block text-base font-medium text-[#07074D]"
             >
               Full Name
             </label>
@@ -94,7 +94,7 @@ const Form = () => {
           <div className="mb-5">
             <label
               htmlFor="email"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              className=" block text-base font-medium text-[#07074D]"
             >
               Email Address
             </label>
@@ -121,7 +121,7 @@ const Form = () => {
           <div className="mb-5">
             <label
               htmlFor="message"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              className="block text-base font-medium text-[#07074D]"
             >
               Message
             </label>

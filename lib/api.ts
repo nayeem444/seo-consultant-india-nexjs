@@ -1,6 +1,6 @@
 const API_URL = process.env.WORDPRESS_API_URL
 
-async function fetchAPI(query = '', { variables }: Record<string, any> = {}) {
+export default async function fetchAPI(query = '', { variables }: Record<string, any> = {}) {
   const headers = { 'Content-Type': 'application/json' }
 
   if (process.env.WORDPRESS_AUTH_REFRESH_TOKEN) {
@@ -51,6 +51,7 @@ export async function getAllPostsWithSlug() {
         edges {
           node {
             slug
+            id
           }
         }
       }
@@ -66,6 +67,7 @@ export async function getAllPostsForHome(preview) {
       posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
           node {
+            id
             title
             excerpt
             slug
@@ -121,6 +123,8 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
       }
     }
     fragment PostFields on Post {
+      id
+      databaseId
       title
       excerpt
       slug
@@ -208,5 +212,9 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   // If there are still 3 posts, remove the last one
   if (data.posts.edges.length > 2) data.posts.edges.pop()
 
-  return data
+  return {
+    post: data.post,
+    postId: data.post.id, // Add this line to get the post ID
+    posts: data.posts,
+  }
 }
