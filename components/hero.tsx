@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Img1 from '../public/favicon/heroImg.png'
+import Img1 from '../public/IMG_4264-scaled-compressed (1).webp'
 
 const Hero = () => {
   return (
@@ -100,7 +100,7 @@ the effectiveness of my optimization strategies.</p>
 
     </div>
   <div className="relative ms-4 mt-12">
-      <Image width={500} height={500} className="w-full rounded-md" src={Img1} alt="Image Description"/>
+      <Image width={400} height={400} className="w-full rounded-md" src={Img1} alt="Image Description"/>
       <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
   <div className="absolute bottom-0 start-0">
         <svg className="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">

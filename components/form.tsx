@@ -63,13 +63,13 @@ const Form = () => {
   };
 
   return (
-    <div className='-mt-16' >
+    <div  className='-mt-12' >
       <div>
         <form  method="POST"  >
-            <div >
+            <div className="mb-5">
             <label
               htmlFor="name"
-              className="block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-[#07074D]"
             >
               Full Name
             </label>
@@ -94,7 +94,7 @@ const Form = () => {
           <div className="mb-5">
             <label
               htmlFor="email"
-              className=" block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-[#07074D]"
             >
               Email Address
             </label>
@@ -121,7 +121,7 @@ const Form = () => {
           <div className="mb-5">
             <label
               htmlFor="message"
-              className="block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-[#07074D]"
             >
               Message
             </label>

@@ -11,6 +11,8 @@ import Timeline from "../components/Timeline";
 import Accordion from "../components/FAQ";
 import Content from "../components/content";
 import Contant2 from "../components/contact2";
+import Calan from "../components/popup";
+import Contact3 from "../components/Contact3";
 
 export default function Home() {
   return (
@@ -21,11 +23,12 @@ export default function Home() {
 <Courasal/>
 <About/>
 <Timeline/>
+<Calan/>
 <Content/>
-<Contant2/>
 <Service/>
 <Accordion/>
 <Testimonials/>
+<Contact3/>
 <Footer/>
    </>
   )
