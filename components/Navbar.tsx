@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <nav className="font-montserrat relative h-16 py-4 flex justify-between items-center bg-white">
 		<a className="text-3xl font-bold leading-none ml-16" href="/">
-			<Image src={img1} width={100} height={100} alt='logo' />
+			<Image src={img1} width={120} height={120} alt='logo' />
 		</a>
 		<div className="lg:hidden">
 			<button className="navbar-burger flex items-center text-blue-600 p-3">
@@ -74,7 +74,7 @@ const Navbar = () => {
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a className="text-sm text-gray-800 font-bold hover:text-blue-600 hover:font-bold" href="/blog">Blog</a></li>
+			{/* <li><a className="text-sm text-gray-800 font-bold hover:text-blue-600 hover:font-bold" href="/blog">Blog</a></li> */}
 			<li className="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -113,9 +113,9 @@ const Navbar = () => {
 					<li className="mb-1">
 						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/#services">Services</a>
 					</li>
-					<li className="mb-1">
+					{/* <li className="mb-1">
 						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/blog">Blog</a>
-					</li>
+					</li> */}
 					<li className="mb-1">
 						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/#contact">Contact</a>
 					</li>
