@@ -7,9 +7,6 @@ import img3 from '../public/favicon/pic-1.jpg'
 
 const testimonials = () => {
   return (
-
-
-
     <section className=" bg-white py-12 text-blue-900 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col items-center">
@@ -111,10 +108,6 @@ Justin Lubomirsky</p>
     </div>
   </div>
 </section>
-
-
-
-
   )
 }
 

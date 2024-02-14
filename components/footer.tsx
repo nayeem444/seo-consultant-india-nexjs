@@ -122,7 +122,7 @@ const footer = () => {
           <div className="relative md:mb-6" data-te-input-wrapper-init>
             <input
               type="text"
-              className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full rounded border-0 bg-white px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput1"
               placeholder="Email address" />
            <label htmlFor="exampleFormControlInput1" className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200">
@@ -147,97 +147,20 @@ const footer = () => {
    
     <div className="mb-6">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-        distinctio earum repellat quaerat voluptatibus placeat nam,
-        commodi optio pariatur est quia magnam eum harum corrupti dicta,
-        aliquam sequi voluptate quas.
+        
       </p>
     </div>
 
  
     <div className="grid md:grid-cols-2 lg:grid-cols-4">
-      <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-        <ul className="mb-0 list-none">
-          <li>
-            <a href="#" className="text-white">Link 1</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 2</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 4</a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-        <ul className="mb-0 list-none">
-          <li>
-            <a href="#" className="text-white">Link 1</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 2</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 4</a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-        <ul className="mb-0 list-none">
-          <li>
-            <a href="#" className="text-white">Link 1</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 2</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 4</a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Links</h5>
-
-        <ul className="mb-0 list-none">
-          <li>
-            <a href="#" className="text-white">Link 1</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 2</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#" className="text-white">Link 4</a>
-          </li>
-        </ul>
-      </div>
+    
     </div>
   </div>
 
   <div
     className="w-full p-4 text-center"
     >
-    © 2023 Copyright:
+    Marketing Lad © 2024 Copyright
   
   </div>
 </footer>

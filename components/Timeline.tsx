@@ -1,16 +1,17 @@
 
-
-
 import React from 'react';
 import Image from 'next/image';
-import img1 from '../public/favicon/My_expertise.png'
+import img1 from '../public/favicon/My_expertise.png';
 
 const Timeline = () => {
   return (
-<div className="py-10 container mx-auto grid grid-cols-2 gap-4">
-            <div className="relative ">
-                <div className="border-r-4 border-blue-600 absolute h-full top-0" style={{ 'left': '9px' }}></div>
-                <ul className="list-none m-0 p-0">
+    <div className="py-10 container mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="relative">
+          <div className="border-r-4 border-blue-600 absolute h-full top-0" style={{ left: '10px', transform: 'translateX(-50%)' }}></div>
+
+       
+          <ul className="list-none m-0 p-0">
                     <li className="mb-5  ">
                         <div className="flex group items-center ">
                             <div className="bg-blue-600 group-hover:bg-red-700 z-10 rounded-full border-4 border-black  h-5 w-5">
@@ -120,18 +121,20 @@ Cultivated a collaborative work culture, attracting top talent and fostering pro
                     </li>
 
                 </ul>
-            </div>
-               
 
-<div className="max-w-screen-xl mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-blue-600 dark:border-gray-700 w-full">
+
+
+        </div>
+
+        <div className="max-w-screen-xl mx-auto bg-white border border-gray-100 rounded-lg shadow dark:bg-white dark:border-gray-700 w-full">
     <a href="#">
         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
     </a>
     <div className="p-5">
-        <a href="#">
-            <h5 className="mb-2 mt-12 text-2xl font-bold tracking-tight text-gray-900 text-white">My Expertise As The SEO Consultant<br/><br/></h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 text-white">I have worked with  number of high-profile clients, including BeaconStac, Unacademy, LeadGen App, fullfeel, Taxmann, CustomShow and Apexure. <br/><br/>
+       
+            <h5 className="mb-2 mt-12 text-2xl font-bold tracking-tight text-gray-900 text-dark">My Expertise As The SEO Consultant<br/><br/></h5>
+      
+        <p className="mb-3 font-normal text-gray-700 text-dark">I have worked with  number of high-profile clients, including BeaconStac, Unacademy, LeadGen App, fullfeel, Taxmann, CustomShow and Apexure. <br/><br/>
 
 With a deep understanding of search engine algorithms and a passion for driving organic traffic, I have mastered the skills in optimising websites for higher visibility and better performance in search results. <br/><br/>
 
@@ -144,23 +147,16 @@ But here’s the thing about failure – it’s often the best teacher. Those in
 As time passed, my side hustle, Marketing Lad, began to gain traction. Within just a few short years, I found myself making ten times more than what my day job was paying me. It was a realisation that turned everything on its head. Marketing Lad was no longer just a side gig.<br/><br/>
 
 I also discovered a deep love for SEO consulting. It’s a joy to share the knowledge I’ve gathered over the years – not just the wins, but the failures too – with my clients.</p>
-        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-blue-600 bg-white rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-blue-700 hover:text-white dark:focus:ring-blue-800">
-            Read more
-             <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
+     
     </div>
     <div className=" flex justify-center ">
     <Image src={img1} alt="image" width={350} height={350}/>
     </div>
     
 </div>
-
-            </div>
-        
-
-          );
+      </div>
+    </div>
+  );
 };
 
 export default Timeline;

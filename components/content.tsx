@@ -4,7 +4,7 @@ import img1 from '../public/favicon/content.jpg';
 
 const content = () => {
   return (
-    <section className=" bg-blueGray-200 mt-12">
+    <section className=" bg-blueGray-200 -mt-12 mb-12">
   <div className="container mx-auto px-4">
     <div className="flex flex-wrap">
       <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">

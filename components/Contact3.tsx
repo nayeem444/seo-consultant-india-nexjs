@@ -61,7 +61,7 @@ const Contact = () => {
     
   return (
     <>
-     <div className='flex justify-center text-4xl'><h1>Get In Touch </h1></div>
+     <div className='flex justify-center text-4xl' id='contact'><h1>Get In Touch </h1></div>
       <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]   flex justify-center">
        
         
