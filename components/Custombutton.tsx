@@ -1,5 +1,14 @@
 import React, { useEffect } from 'react';
 
+// Extend the Window interface to include Calendly
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: ({ url }: { url: string }) => void;
+    };
+  }
+}
+
 const CalendlyPopupButton = () => {
     useEffect(() => {
         // Dynamically load the Calendly script
