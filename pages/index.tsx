@@ -13,7 +13,6 @@ import Content from "../components/content";
 import Contant2 from "../components/contact2";
 import Calan from "../components/popup";
 import Contact3 from "../components/Contact3";
-import Header2 from "../components/ComplexNavbar";
 
 export default function Home() {
   return (
