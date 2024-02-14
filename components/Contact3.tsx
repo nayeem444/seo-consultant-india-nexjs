@@ -9,20 +9,23 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [url, setUrl] = useState('');
     const [submissionStatus, setSubmissionStatus] = useState(null);
     const [loading, setLoading] = useState(false);
   
     const [nameValid, setNameValid] = useState(true);
     const [emailValid, setEmailValid] = useState(true);
     const [messageValid, setMessageValid] = useState(true);
+    const [urlValid, setUrlValid] = useState(true);
   
     const validateInputs = () => {
       setNameValid(!!name);
       setEmailValid(!!email);
      
       setMessageValid(!!message);
+      setUrlValid(!!url);
   
-      return name && email && message;
+      return name && email && message && url;
     };
   
     const handleSubmit = async (e) => {
@@ -38,6 +41,7 @@ const Contact = () => {
         name,
         email,
         message,
+        url
       };
   
       try {
@@ -61,11 +65,11 @@ const Contact = () => {
     
   return (
     <>
-     <div className='flex justify-center text-4xl' id='contact'><h1>Get In Touch </h1></div>
+     <div className='font-montserrat flex justify-center text-4xl' id='contact'><h3>Get In Touch </h3></div>
       <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]   flex justify-center">
        
         
-              <div className="relative w-9/12  rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+              <div className="font-montserrat relative w-9/12  rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
               <form  method="POST"  >
             <div className="mb-5">
             <label
@@ -117,7 +121,30 @@ const Contact = () => {
             )}
           </div>
 
-       
+          <div className="mb-5">
+            <label
+              htmlFor="email"
+              className="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Website
+            </label>
+            <input
+              type="url"
+              name="url"
+              id="url"
+              placeholder="www.example.com"
+              className={`w-full rounded-md border ${
+                urlValid ? 'border-[#e0e0e0]' : 'border-red-500'
+              } bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md`}
+              onChange={(e) => {
+                setUrl(e.target.value);
+                setUrlValid(true);
+              }}
+            />
+            {!urlValid && (
+              <div className="text-red-500 mt-2">Website is required</div>
+            )}
+          </div>
 
           <div className="mb-5">
             <label

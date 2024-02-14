@@ -1,11 +1,11 @@
 
 import React from 'react';
 import Image from 'next/image';
-import img1 from '../public/favicon/My_expertise.png';
+import img1 from '../public/IMG_3627-min-1536x1104.jpg';
 
 const Timeline = () => {
   return (
-    <div className="py-10 container mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+    <div className=" font-montserrat py-10 container mx-auto px-4 sm:px-6 lg:px-8 mt-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="relative">
           <div className="border-r-4 border-blue-600 absolute h-full top-0" style={{ left: '10px', transform: 'translateX(-50%)' }}></div>
@@ -126,7 +126,7 @@ Cultivated a collaborative work culture, attracting top talent and fostering pro
 
         </div>
 
-        <div className="max-w-screen-xl mx-auto bg-white border border-gray-100 rounded-lg shadow dark:bg-white dark:border-gray-700 w-full">
+        <div className="max-w-screen-xl mx-auto bg-white border border-gray-100 rounded-lg shadow dark:bg-white dark:border-gray-700 w-full mb-24">
     <a href="#">
         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
     </a>
@@ -150,7 +150,7 @@ I also discovered a deep love for SEO consulting. It’s a joy to share the know
      
     </div>
     <div className=" flex justify-center ">
-    <Image src={img1} alt="image" width={350} height={350}/>
+    <Image src={img1} alt="image" width={600} height={700}/>
     </div>
     
 </div>

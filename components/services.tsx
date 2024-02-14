@@ -2,16 +2,16 @@ import React from "react";
 
 const Service = () => {
   return (
-    <section id="services" className="pb-12 -mt-24 dark:bg-dark lg:pb-[90px] ">
+    <section id="services" className="font-montserrat pb-12 -mt-24 dark:bg-dark lg:pb-[90px] ">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
               <span className="mb-2 block text-lg font-semibold text-black">
-                Our Services
+                My Services
               </span>
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl md:text-[40px]">
-                What We Offer
+                What I Offer
               </h2>
               
             </div>

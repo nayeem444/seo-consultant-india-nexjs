@@ -43,7 +43,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="relative h-16 py-4 flex justify-between items-center bg-white">
+    <nav className="font-montserrat relative h-16 py-4 flex justify-between items-center bg-white">
 		<a className="text-3xl font-bold leading-none ml-16" href="/">
 			<Image src={img1} width={100} height={100} alt='logo' />
 		</a>

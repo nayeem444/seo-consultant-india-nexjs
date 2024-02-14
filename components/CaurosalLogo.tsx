@@ -55,7 +55,7 @@ const CaurosalLogo = () => {
   return (
     <section>
       <div>
-        <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-dark md:text-4xl   ">
+        <h2 className="font-montserrat mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-dark md:text-4xl   ">
         Associated And Featured In:
 
         </h2>
